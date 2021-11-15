@@ -1,6 +1,13 @@
 source $HOME/.config/nvim/general/settings.vim
-source $HOME/.config/nvim/plugins/plugins.vim
-source $HOME/.config/nvim/keys/mappings.vim
-source $HOME/.config/nvim/themes/airline.vim
-source $HOME/.config/nvim/themes/dracula.vim
-source $HOME/.config/nvim/keys/which-key.vim
+
+lua require('plugins')
+lua require('lualine-config')
+lua require('treesitter-config')
+lua require('keymappings')
+lua require('whichkey-config')
+lua require('telescope-config')
+lua require('nvim-comment')
+lua require('lsp')
+lua require('compe-config') 
+
+colorscheme gruvbox-material
