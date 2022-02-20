@@ -47,6 +47,8 @@ return require('packer').startup(function(use)
 
   use 'folke/which-key.nvim'
 
+  use 'karb94/neoscroll.nvim'
+
   use 'sainnhe/gruvbox-material'
 
   use {
@@ -54,6 +56,8 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use {'p00f/nvim-ts-rainbow'}
+
+  -- use {'karb94/neoscroll.nvim'}
 
   use {
     'lewis6991/gitsigns.nvim',

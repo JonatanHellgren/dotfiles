@@ -9,5 +9,7 @@ lua require('telescope-config')
 lua require('nvim-comment')
 lua require('lsp')
 lua require('compe-config') 
+lua require('neoscroll').setup()
+" lua require('neoscroll').setup()
 
 colorscheme gruvbox-material

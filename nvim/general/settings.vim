@@ -35,6 +35,9 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set autochdir                           " Your working directory will always be the same as your working directory
 set timeoutlen=0
 set termguicolors
+set scrolloff=8
+
+autocmd BufRead,BufNewFile   *.tex setlocal wrap linebreak
 
 :tnoremap <Esc> <C-\><C-n>
 
