@@ -1,0 +1,9 @@
+gnome.wallpaper: ~/Pictures/bg.png
+i3-wm.bar.position: top
+i3-wm.gaps.inner.size: 10
+i3-wm.gaps.outer.size: 0
+i3-wm.client.focused.color.child_border: "#a89984"
+
+/* i3-wm.gaps.smart: off */
+
+/* i3-wm.bar.background.color: "#002b36" */
