@@ -26,6 +26,7 @@ set laststatus=0                        " Always display the status line
 set number relativenumber               " Line numbers
 set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
+let g:gruvbox_material_background = 'hard'
 set showtabline=2                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 set updatetime=300                      " Faster completion
@@ -36,8 +37,11 @@ set autochdir                           " Your working directory will always be 
 set timeoutlen=0
 set termguicolors
 set scrolloff=8
+set guifont=JuliaMono
 
 autocmd BufRead,BufNewFile   *.tex setlocal wrap linebreak
+autocmd BufRead,BufNewFile   *.txt setlocal wrap linebreak
+autocmd BufRead,BufNewFile   *.md setlocal wrap linebreak
 
 :tnoremap <Esc> <C-\><C-n>
 

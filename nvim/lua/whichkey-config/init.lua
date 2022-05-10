@@ -6,6 +6,7 @@ local mappings = {
   g = {":Telescope live_grep<cr>", "Live Grep"},
   H = {":nohl<cr>", "No Highlight"},
   m = {[[i"""<esc>o<esc>o"""<esc>ki]], "Multiline comment"},
+  d = {":set background=light<cr>", "Light mode"},
   -- r = {":w<cr> :!python %<cr>", "Run python"},
   -- r = {":w<cr> :FloatermSend \\%run %<cr>", "Run python"},
   q = {":quitall<cr>", "Quit nvim"},
@@ -32,7 +33,13 @@ local mappings = {
   s = {
     name = "Spellcheck",
     e = {":set spell spellang=en_US<cr>", "Spell Check"},
+    s = {":set spell spellang=sv_SV<cr>", "Spell Check"},
     n = {":set nospell<cr>", "No spell check"}
+  },
+  j = {
+    name = "Julia",
+    r = {[[:w <cr>:FloatermSend include("%")<cr>]], "Run"},
+    R = {":FloatermToggle<cr> exit()<cr> julia<cr>", "Restart REPL"}
   },
   t = {
     name = "Terminal",
@@ -41,10 +48,10 @@ local mappings = {
     r = {":w<cr> :FloatermSend \\%run %<cr>", "Run python"},
     f = {":FloatermNew --width=0.9 --height=0.9<cr>", "New Floating Terminal"},
     i = {":FloatermNew --width=0.4 --wintype=vsplit<cr> ipython<cr>", "New iPython"},
-    m = {":FloatermNew --width=0.4 --wintype=vsplit<cr> conda activate master<cr> ipython<cr>", "New master"},
-    p = {":FloatermNew --width=0.4 --wintype=vsplit<cr> conda activate Proj<cr> ipython<cr>", "New Proj"},
-    v = {":FloatermNew --width=0.4 --wintype=vsplit<cr> conda activate Viscando<cr> ipython<cr>", "New Viscando"},
-    n = {":FloatermNew --width=0.4 --wintype=vsplit<cr> conda activate NLP<cr> ipython<cr>", "New NLP"},
+    m = {":FloatermNew --width=0.4 --wintype=vsplit<cr> source ~/Master/Master_env/bin/activate<cr> ipython<cr>", "New Master"},
+    S = {":FloatermNew --width=0.4 --wintype=vsplit<cr> source ~/Master/Safelife_env/bin/activate<cr> ipython<cr>", "New Safelife"},
+    v = {":FloatermNew --width=0.4 --wintype=vsplit<cr> source ~/Viscando/Viscando_env/bin/activate<cr> ipython<cr>", "New Viscando"},
+    j = {":FloatermNew --width=0.4 --wintype=vsplit<cr> julia<cr>", "Julia"},
   }
 }
 local opts = {prefix = '<leader>'}

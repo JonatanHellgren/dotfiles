@@ -17,20 +17,9 @@ return require('packer').startup(function(use)
     config = function() require'nvim-tree'.setup {} end
   }
 
-  use {
-    "folke/zen-mode.nvim",
-    config = function()
-      require("zen-mode").setup {
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
-      }
-    end
-  }
   -- LSP
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-compe'
-  use 'hrsh7th/vim-vsnip'
   use 'folke/lsp-colors.nvim'
 
 
@@ -57,8 +46,6 @@ return require('packer').startup(function(use)
 
   use 'folke/which-key.nvim'
 
-  use 'karb94/neoscroll.nvim'
-
   use 'sainnhe/gruvbox-material'
 
   use {
@@ -66,8 +53,6 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use {'p00f/nvim-ts-rainbow'}
-
-  -- use {'karb94/neoscroll.nvim'}
 
   use {
     'lewis6991/gitsigns.nvim',
